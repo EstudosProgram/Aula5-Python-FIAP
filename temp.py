@@ -1,26 +1,3 @@
-#Busca binária - for
-
-def busca_binaria(lista,alvo):
-
-    l, h = 0, len(lista) -1
-
-    for i in range(len(lista)):
-        m = (l + h) // 2
-        print(f"Iteração {i + l}: l={l}, h={h}, m={m}")
-
-        if lista[m] == alvo:
-            return m
-        elif lista[m] < alvo:
-            l = m + 1
-        else:
-            h = m - 1
-    return - 1
-
-lista = [11,15,20,27,28,50,56]
-alvo = 50
-resultado = busca_binaria(lista, alvo)
-print(resultado)
-
 #Sistema de fila FIFO
 
 fila = ['cliente1','cliente2','cliente3']
@@ -97,7 +74,12 @@ nome = input("digite seu nome: ")
 lista_chegada.append(nome)
 nome1 = input("digite seu nome1: ")
 lista_chegada.append(nome1)
+nome2 = input("digite seu nome2: ")
+lista_chegada.append(nome2)
 print(lista_chegada)
+
+
+
 
 
 
